@@ -51,7 +51,7 @@ current_time = time.strftime("%H:%M:%S", t)
 response = requests.get(URL)
 #print(response.json())
 
-coins = response.json()['data']
+coins = response.json()['data']['ticker']
 
 #print(coins[0])
 
