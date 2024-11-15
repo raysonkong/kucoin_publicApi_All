@@ -5,25 +5,25 @@ import pprint
 import datetime
 import time
 import os
-from config import *
+
 
 SLEEP_TIME = 0.2
 
 ## ==================================##
-## setup config_cmc.py in the same folder
+##  Config #####
 ## ==================================##
 
+EXCHANGES=["KUCOIN"]  # only one
 
-# EXCHANGES=["KUCOIN"]  # only one
-
-# WANTED_CURRENCIES = ['USDT'] # for now just use one 
-
+WANTED_CURRENCIES = ['USDT'] # for now just use one 
 
 
-# # # Do not alter below easily
-# GROUP_SIZE = len(EXCHANGES) * 1000
 
-# URL = 'https://api.kucoin.com/api/v1/market/allTickers'
+# # Do not alter below easily
+GROUP_SIZE = len(EXCHANGES) * 1000
+
+
+URL = 'https://api.kucoin.com/api/v2/symbols'
 
 # ## end of Config file
 
